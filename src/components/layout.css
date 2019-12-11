@@ -220,6 +220,7 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+/*
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -321,7 +322,7 @@ h6 {
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.1;
-}
+}*/
 hgroup {
   margin-left: 0;
   margin-right: 0;
@@ -619,4 +620,22 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.site-layout__main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.site-layout__main-left {
+  width: var(--site-left-margin-width);
+  flex: 1 0 var(--site-left-margin-width);
+}
+.site-layout__main-content {
+  flex: 2 1 1080px;
+  max-width: 1080px;
+}
+.site-layout__main-right {
+  width: var(--site-left-margin-width);
+  flex: 1 2 var(--site-left-margin-width);
 }

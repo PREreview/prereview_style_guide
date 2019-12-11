@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `PREreview Style Guide`,
+    description: `A Style Guide for building User Interfaces within the PREreview umbrella`,
+    author: `@halmos`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,4 +31,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: "/prereview_style_guide",
 }

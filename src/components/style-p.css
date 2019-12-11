@@ -1,0 +1,18 @@
+.style-p {
+  font: var(--basic-font);
+  margin: 0;
+  margin-top: var(--basic-top-margin);
+  hyphens: auto;
+}
+
+.style-p--large {
+  font: var(--basic-font--large);
+  margin: 0;
+  margin-top: var(--basic-top-margin--large);
+}
+
+.style-p--small {
+  font: var(--basic-font--small);
+  margin: 0;
+  margin-top: var(--basic-top-margin--small);
+}

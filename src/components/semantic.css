@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+:root {
+  /* grid */
+  --xxsgrd: 4px;
+  --xsgrd: 8px;
+  --sgrd: 16px;
+  --mgrd: 24px;
+  --lgrd: 32px;
+  --xlgrd: 40px;
+
+  /* Pre Review Colors */
+  --prereview-red: #ff3333;
+  --prereview-black: #000000;
+  --prereview-white: #ffffff;
+  --prereview-grey: #4b4949;
+  --prereview-blue: #197cf4;
+  --prereview-light-blue: #e4edf7;
+  --prereview-light-gold: #fffaee;
+  --prereview-gold: #fcbd4c;
+  --prereview-coral: #f77463;
+
+  --prereview-spring-green: #66f785;
+
+  --prereview-xxlight-grey: #c1bfbf;
+  --prereview-xlight-grey: #a5a3a3;
+  --prereview-light-grey: #747272;
+  --unrich-black: #0b0b0b;
+
+  --ruling-color: var(--prereview-light-grey);
+
+  --basic-font-color: var(--unrich-black);
+  --basic-font-color--light: var(--prereview-light-grey);
+
+  /* Fonts */
+  --font-family: "Open Sans", "sans-serif";
+
+  --basic-font-size: 11pt;
+  --basic-line-height: 16pt;
+  --basic-top-margin: 11pt;
+  --basic-font: 400 var(--basic-font-size) / var(--basic-line-height)
+    var(--font-family);
+
+  --basic-font-size--small: 10pt;
+  --basic-line-height--small: 16pt;
+  --basic-top-margin--small: 10pt;
+  --basic-font--small: 400 var(--basic-font-size--small) /
+    var(--basic-line-height--small) var(--font-family);
+
+  --basic-font-size--large: 13pt;
+  --basic-line-height--large: 20pt;
+  --basic-top-margin--large: 13pt;
+  --basic-font--large: 500 var(--basic-font-size--large) /
+    var(--basic-line-height--large) var(--font-family);
+
+  --header-menu-font-size: 16px;
+  --header-menu-line-height: 20px;
+  --header-menu-font: 400 var(--header-menu-font-size) /
+    var(--header-menu-line-height) var(--font-family);
+
+  --header-1-font-size: 24pt;
+  --header-1-line-height: 32pt;
+  --header-1-top-margin: 24pt;
+  --header-1-font: 600 var(--header-1-font-size) / var(--header-1-line-height)
+    var(--font-family);
+
+  --header-2-font-size: 20pt;
+  --header-2-line-height: 24pt;
+  --header-2-top-margin: 20pt;
+  --header-2-font: 500 var(--header-2-font-size) / var(--header-2-line-height)
+    var(--font-family);
+
+  --header-3-font-size: 16pt;
+  --header-3-line-height: 20pt;
+  --header-3-top-margin: 16pt;
+  --header-3-font: 500 var(--header-3-font-size) / var(--header-3-line-height)
+    var(--font-family);
+
+  --header-4-font-size: 14pt;
+  --header-4-line-height: 20pt;
+  --header-4-top-margin: 14pt;
+  --header-4-font: 500 var(--header-4-font-size) / var(--header-4-line-height)
+    var(--font-family);
+
+  --header-5-font-size: 11pt;
+  --header-5-line-height: 16pt;
+  --header-5-top-margin: 11pt;
+  --header-5-font: 600 var(--header-5-font-size) / var(--header-5-line-height)
+    var(--font-family);
+
+  /* Site Vars */
+  --site-header-height: 80px;
+  --site-left-margin-width: 200px;
+}
+body {
+  font: var(--basic-font);
+  color: var(--basic-font-color);
+}
+
+a,
+a:visited {
+  color: var(--);
+}

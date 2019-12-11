@@ -1,0 +1,8 @@
+.example-row {
+  display: flex;
+  display: grid;
+  grid-template-columns: minmax(150px, 30%) auto;
+  grid-template-rows: auto;
+  grid-template-areas: "label example";
+  gap: var(--lgrd);
+}

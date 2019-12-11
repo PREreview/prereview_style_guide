@@ -1,0 +1,10 @@
+.white-space {
+}
+
+.white-space__two-col {
+  display: flex;
+}
+
+.white-space__two-col > * {
+  flex: 0 0 50%;
+}

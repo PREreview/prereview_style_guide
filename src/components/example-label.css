@@ -1,0 +1,8 @@
+.example-label {
+  grid-area: "label";
+  box-sizing: border-box;
+}
+
+.example-label__subtitle {
+  color: var(--basic-font-color--light);
+}

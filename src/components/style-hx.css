@@ -1,0 +1,29 @@
+.style-h1 {
+  font: var(--header-1-font);
+  margin: 0;
+  margin-top: var(--header-1-top-margin);
+}
+
+.style-h2 {
+  font: var(--header-2-font);
+  margin: 0;
+  margin-top: var(--header-2-top-margin);
+}
+
+.style-h3 {
+  font: var(--header-3-font);
+  margin: 0;
+  margin-top: var(--header-3-top-margin);
+}
+
+.style-h4 {
+  font: var(--header-4-font);
+  margin: 0;
+  margin-top: var(--header-4-top-margin);
+}
+
+.style-h5 {
+  font: var(--header-5-font);
+  margin: 0;
+  margin-top: var(--header-5-top-margin);
+}

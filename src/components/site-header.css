@@ -1,0 +1,21 @@
+.site-header {
+  height: var(--site-header-height);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: var(--prereview-coral);
+  color: white;
+  padding: var(--mgrd);
+  box-shadow: 0 2px 4px lightgrey;
+}
+
+.site-header__title {
+  margin: 0 !important;
+}
+.site-header a {
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  text-decoration: underline;
+}

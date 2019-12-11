@@ -1,0 +1,8 @@
+.page {
+  padding: var(--mgrd) var(--xlgrd);
+  font: var(--basic-font);
+}
+
+.page__header {
+  margin-bottom: var(--xlgrd);
+}
