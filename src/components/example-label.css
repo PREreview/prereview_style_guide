@@ -4,5 +4,6 @@
 }
 
 .example-label__subtitle {
+  font: var(--basic-font--small);
   color: var(--basic-font-color--light);
 }

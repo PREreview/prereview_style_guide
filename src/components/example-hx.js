@@ -21,6 +21,7 @@ const ExampleHx = ({
       lineHeight={fontMetrics.lineHeight}
       unit={fontMetrics.unit}
       topMargin={fontMetrics.topMargin}
+      bottomMargin={fontMetrics.bottomMargin}
     >
       <StyleHx level={level}>{children}</StyleHx>
     </RevealTypeWhiteSpace>

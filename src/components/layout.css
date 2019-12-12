@@ -626,14 +626,15 @@ pre tt:after {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-top: var(--site-header-height);
 }
 .site-layout__main-left {
   width: var(--site-left-margin-width);
   flex: 1 0 var(--site-left-margin-width);
 }
 .site-layout__main-content {
-  flex: 2 1 1080px;
-  max-width: 1080px;
+  flex: 2 1 960px;
+  max-width: 960px;
 }
 .site-layout__main-right {
   width: var(--site-left-margin-width);

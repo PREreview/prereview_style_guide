@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   margin-top: var(--site-header-height);
-  border-right: 1px solid var(--prereview-xxlight-grey);
+  border-right: 1px solid var(--prereview-xxxlight-grey);
   padding: var(--mgrd);
   box-sizing: border-box;
 }

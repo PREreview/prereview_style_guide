@@ -37,9 +37,7 @@ const Text = () => {
         <header className="page__header">
           <StyleHx level={1}>Styling Bodies of text</StyleHx>
         </header>
-        <RevealBoxWhiteSpace margin={[10, 15]} padding={[15, 25]}>
-          Hello World
-        </RevealBoxWhiteSpace>
+
         <section>
           <ExampleRow>
             <ExampleLabel

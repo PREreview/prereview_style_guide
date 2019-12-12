@@ -3,10 +3,13 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  background-color: var(--prereview-coral);
+  background-color: var(--prereview-red);
   color: white;
   padding: var(--mgrd);
   box-shadow: 0 2px 4px lightgrey;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .site-header__title {

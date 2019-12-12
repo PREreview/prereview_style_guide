@@ -2,28 +2,33 @@
   font: var(--header-1-font);
   margin: 0;
   margin-top: var(--header-1-top-margin);
+  margin-bottom: var(--header-1-bottom-margin);
 }
 
 .style-h2 {
   font: var(--header-2-font);
   margin: 0;
   margin-top: var(--header-2-top-margin);
+  margin-bottom: var(--header-2-bottom-margin);
 }
 
 .style-h3 {
   font: var(--header-3-font);
   margin: 0;
   margin-top: var(--header-3-top-margin);
+  margin-bottom: var(--header-3-bottom-margin);
 }
 
 .style-h4 {
   font: var(--header-4-font);
   margin: 0;
   margin-top: var(--header-4-top-margin);
+  margin-bottom: var(--header-4-bottom-margin);
 }
 
 .style-h5 {
   font: var(--header-5-font);
   margin: 0;
   margin-top: var(--header-5-top-margin);
+  margin-bottom: var(--header-5-bottom-margin);
 }

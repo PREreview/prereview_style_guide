@@ -20,6 +20,7 @@ const ExampleTextBlock = ({
       lineHeight={fontMetrics.lineHeight}
       unit={fontMetrics.unit}
       topMargin={fontMetrics.topMargin}
+      bottomMargin={fontMetrics.bottomMargin}
     >
       {children}
     </RevealTypeWhiteSpace>

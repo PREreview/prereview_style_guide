@@ -1,5 +1,5 @@
 .page {
-  padding: var(--mgrd) var(--xlgrd);
+  padding: var(--xlgrd) calc(2 * var(--xlgrd));
   font: var(--basic-font);
 }
 

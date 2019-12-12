@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         <main className="site-layout__main-content">{children}</main>
         <div className="site-layout__main-right"></div>
       </div>
-      <footer>© {new Date().getFullYear()}, PREreview</footer>
+      {/* <footer>© {new Date().getFullYear()}, PREreview</footer> */}
     </>
   )
 }

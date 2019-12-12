@@ -2,6 +2,7 @@
   font: var(--basic-font);
   margin: 0;
   margin-top: var(--basic-top-margin);
+  margin-bottom: var(--basic-bottom-margin);
   hyphens: auto;
 }
 
@@ -9,10 +10,12 @@
   font: var(--basic-font--large);
   margin: 0;
   margin-top: var(--basic-top-margin--large);
+  margin-bottom: var(--basic-bottom-margin--large);
 }
 
 .style-p--small {
   font: var(--basic-font--small);
   margin: 0;
   margin-top: var(--basic-top-margin--small);
+  margin-bottom: var(--basic-bottom-margin--small);
 }

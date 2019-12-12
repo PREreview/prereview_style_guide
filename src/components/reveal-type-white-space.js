@@ -8,6 +8,7 @@ const RevealTypeWhiteSpace = ({
   lineHeight = 20,
   fontSize = 10,
   topMargin = 0,
+  bottomMargin = 0,
   unit = "pt",
   defaultReveal = false,
 }) => {
@@ -74,14 +75,40 @@ const RevealTypeWhiteSpace = ({
         <div className="reveal-type-white-space__leading">
           <div
             className="reveal-type-white-space__top-margin"
-            style={{ height: `${topMargin}${unit}` }}
+            style={{
+              height: `${topMargin}${unit}`,
+              top: `-${topMargin}${unit}`,
+              width: "100%",
+              position: "absolute",
+            }}
           >
-            <span className="reveal-type-white-space__top-margin__label">
-              {topMargin}
-              {unit}
-            </span>
+            {topMargin > 0 && (
+              <span className="reveal-type-white-space__top-margin__label">
+                {topMargin}
+                {unit}
+              </span>
+            )}
           </div>
-          {getBackground()}
+          <div className="reveal-type-white-space__lines">
+            {getBackground()}
+          </div>
+
+          <div
+            className="reveal-type-white-space__bottom-margin"
+            style={{
+              height: `${bottomMargin}${unit}`,
+              width: "100%",
+              position: "absolute",
+              bottom: `-${bottomMargin}${unit}`,
+            }}
+          >
+            {bottomMargin > 0 && (
+              <span className="reveal-type-white-space__bottom-margin__label">
+                {bottomMargin}
+                {unit}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>

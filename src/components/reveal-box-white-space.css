@@ -3,7 +3,10 @@
 
   display: inline-block;
 }
-
+.reveal-box-white-space--active,
+.reveal-box-white-space:hover {
+  outline: 1px dotted var(--prereview-light-blue);
+}
 .reveal-box-white-space__button {
   position: absolute;
   right: 8px;
@@ -26,10 +29,9 @@
   right: 0;
   top: 0;
   opacity: 0;
-  background-color: var(--prereview-light-blue);
+  background-color: var(--prereview-light-gold);
   font-size: 8pt;
   color: var(--prereview-light-grey);
-  outline: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +43,7 @@
   right: 0;
   bottom: 0;
   opacity: 0;
-  background-color: var(--prereview-light-blue);
+  background-color: var(--prereview-light-gold);
 }
 
 .reveal-box-white-space__left-margin {
@@ -50,7 +52,7 @@
   bottom: 0;
   top: 0;
   opacity: 0;
-  background-color: var(--prereview-light-blue);
+  background-color: var(--prereview-light-gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +64,7 @@
   bottom: 0;
   top: 0;
   opacity: 0;
-  background-color: var(--prereview-light-blue);
+  background-color: var(--prereview-light-gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +84,8 @@
   left: 0;
   right: 0;
   top: 0;
-  outline: 1px solid var(--prereview-light-blue);
+  outline: 1px solid white;
+  background-color: var(--prereview-light-blue);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -92,7 +95,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  outline: 1px solid var(--prereview-light-blue);
+  outline: 1px solid white;
+  background-color: var(--prereview-light-blue);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -102,7 +106,8 @@
   left: 0;
   bottom: 0;
   top: 0;
-  outline: 1px solid var(--prereview-light-blue);
+  outline: 1px solid white;
+  background-color: var(--prereview-light-blue);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -112,7 +117,8 @@
   right: 0;
   bottom: 0;
   top: 0;
-  outline: 1px solid var(--prereview-light-blue);
+  outline: 1px solid white;
+  background-color: var(--prereview-light-blue);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -125,6 +131,15 @@
 }
 
 .reveal-box-white-space__spacer {
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.reveal-box-white-space--active .reveal-box-white-space__spacer,
+.reveal-box-white-space:hover .reveal-box-white-space__spacer {
+  outline: 1px dotted var(--prereview-light-blue);
 }

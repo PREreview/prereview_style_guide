@@ -7,7 +7,7 @@ const ExampleLabel = ({ title, subtitle }) => {
   return (
     <div className="example-label">
       <StyleHx level={5}>{title}</StyleHx>
-      <span className="example-label__subtitle"> {subtitle}</span>
+      <div className="example-label__subtitle"> {subtitle}</div>
     </div>
   )
 }

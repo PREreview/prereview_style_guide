@@ -1,5 +1,5 @@
 <h1 align="center">
-  PREreview Style Guide
+  [PREreview Style Guide](https://prereview.github.io/prereview_style_guide/)
 </h1>
 
 The PREreview style guide is built in React.js using [Gatsby](https://github.com/gatsbyjs/)
