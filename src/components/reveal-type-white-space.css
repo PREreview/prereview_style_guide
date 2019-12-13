@@ -36,12 +36,16 @@
 
 .reveal-type-white-space__button {
   position: absolute;
-  right: -32px;
+  right: 4px;
   top: 8px;
-  opacity: 0.25;
+  opacity: 0;
   width: var(--mgrd);
+  z-index: 100;
 }
 
+.reveal-type-white-space:hover .reveal-type-white-space__button {
+  opacity: 1;
+}
 .reveal-type-white-space__icon-button {
   width: var(--mgrd) !important;
   height: var(--mgrd) !important;

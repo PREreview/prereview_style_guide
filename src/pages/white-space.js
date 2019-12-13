@@ -94,7 +94,7 @@ const WhiteSpace = () => {
                   subtitle="48px to 56px margin"
                 />
                 <div className="white-space__card">
-                  <RevealBoxWhiteSpace margin={[0]} padding={[16]} unit="px">
+                  <RevealBoxWhiteSpace>
                     <div className="white-space__wrapping-grid">
                       <RevealBoxWhiteSpace className="white-space__unrelated-example-box-container">
                         <div className="white-space__search-box">Search</div>

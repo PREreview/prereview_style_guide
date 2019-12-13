@@ -105,6 +105,13 @@
   --header-5-font: 600 var(--header-5-font-size) / var(--header-5-line-height)
     var(--font-family);
 
+  --display-1-font-size: 32pt;
+  --display-1-line-height: 40pt;
+  --display-1-top-margin: 20pt;
+  --display-1-bottom-margin: 20pt;
+  --display-1-font: 300 var(--display-1-font-size) /
+    var(--display-1-line-height) var(--font-family);
+
   /* Site Vars */
   --site-header-height: 80px;
   --site-left-margin-width: 200px;

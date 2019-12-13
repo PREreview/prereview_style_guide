@@ -9,6 +9,8 @@ import ExampleHx from "../components/example-hx"
 import ExampleTextBlock from "../components/example-text-block"
 import RevealBoxWhiteSpace from "../components/reveal-box-white-space"
 import StyleP from "../components/style-p"
+import StyleDisplayText from "../components/style-display-text"
+
 const Text = () => {
   const titleGenerator = new LoremIpsum({
     wordsPerSentence: {
@@ -69,6 +71,22 @@ const Text = () => {
             <div>
               <ExampleTextBlock styleName="basic">
                 <StyleP>{textGenerator.generateParagraphs(1)}</StyleP>
+              </ExampleTextBlock>
+              <ExampleTextBlock styleName="basic">
+                <StyleP>{textGenerator.generateParagraphs(1)}</StyleP>
+              </ExampleTextBlock>
+            </div>
+          </ExampleRow>
+          <ExampleRow>
+            <ExampleLabel
+              title="Display Text"
+              subtitle="Open Sans 300, 32pt / 40pt"
+            />
+            <div>
+              <ExampleTextBlock styleName="display-1">
+                <StyleDisplayText>
+                  {titleGenerator.generateSentences(2)}
+                </StyleDisplayText>
               </ExampleTextBlock>
               <ExampleTextBlock styleName="basic">
                 <StyleP>{textGenerator.generateParagraphs(1)}</StyleP>

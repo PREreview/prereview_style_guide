@@ -56,9 +56,11 @@
 
 .white-space__two-col__block-a {
   margin-right: var(--mgrd);
+  margin: 20px;
 }
 .white-space__two-col__block-b {
   margin-left: var(--mgrd);
+  margin: 20px;
 }
 
 .white-space__first-level-info {

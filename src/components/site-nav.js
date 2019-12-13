@@ -8,10 +8,17 @@ const SiteNav = () => {
     <nav className="site-nav">
       <ul>
         <li>
-          <Link to="/headers/">Headers</Link>
+          <Link to="/typography/">Typography</Link>
         </li>
         <li>
-          <Link to="/text/">Text</Link>
+          <ul>
+            <li>
+              <Link to="/headers/">Headers</Link>
+            </li>
+            <li>
+              <Link to="/text/">Body Text</Link>
+            </li>
+          </ul>
         </li>
         <li>
           <Link to="/white-space/">White Space</Link>

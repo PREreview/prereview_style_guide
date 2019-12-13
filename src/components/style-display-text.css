@@ -1,0 +1,5 @@
+.style-display-text {
+  font: var(--display-1-font);
+  margin-top: var(--display-1-top-margin);
+  margin-bottom: var(--display-1-bottom-margin);
+}
