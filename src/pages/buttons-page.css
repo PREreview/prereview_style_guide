@@ -1,0 +1,16 @@
+.buttons-page {
+}
+
+.buttons-page__button-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: var(--lgrd);
+}
+
+.buttons-page__button-example {
+  display: flex;
+  & .v-dimension {
+    margin-right: var(--xsgrd);
+  }
+}

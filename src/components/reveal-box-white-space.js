@@ -130,38 +130,41 @@ const RevealBoxWhiteSpace = ({
           setCssDisplay(getMyDisplayMode(parentCssDisplay, display))
         }
 
-        if (margin.length === 1) {
-          setTopMargin(margin[0])
-          setRightMargin(margin[0])
-          setBottomMargin(margin[0])
-          setLeftMargin(margin[0])
-        } else if (margin.length === 2) {
-          setTopMargin(margin[0])
-          setBottomMargin(margin[0])
-          setRightMargin(margin[1])
-          setLeftMargin(margin[1])
-        } else if (margin.length === 4) {
-          setTopMargin(margin[0])
-          setRightMargin(margin[1])
-          setBottomMargin(margin[2])
-          setLeftMargin(margin[3])
+        if (margin) {
+          if (margin.length === 1) {
+            setTopMargin(margin[0])
+            setRightMargin(margin[0])
+            setBottomMargin(margin[0])
+            setLeftMargin(margin[0])
+          } else if (margin.length === 2) {
+            setTopMargin(margin[0])
+            setBottomMargin(margin[0])
+            setRightMargin(margin[1])
+            setLeftMargin(margin[1])
+          } else if (margin.length === 4) {
+            setTopMargin(margin[0])
+            setRightMargin(margin[1])
+            setBottomMargin(margin[2])
+            setLeftMargin(margin[3])
+          }
         }
-
-        if (padding.length === 1) {
-          setTopPadding(padding[0])
-          setRightPadding(padding[0])
-          setBottomPadding(padding[0])
-          setLeftPadding(padding[0])
-        } else if (padding.length === 2) {
-          setTopPadding(padding[0])
-          setBottomPadding(padding[0])
-          setRightPadding(padding[1])
-          setLeftPadding(padding[1])
-        } else if (padding.length === 4) {
-          setTopPadding(padding[0])
-          setRightPadding(padding[1])
-          setBottomPadding(padding[2])
-          setLeftPadding(padding[3])
+        if (padding) {
+          if (padding.length === 1) {
+            setTopPadding(padding[0])
+            setRightPadding(padding[0])
+            setBottomPadding(padding[0])
+            setLeftPadding(padding[0])
+          } else if (padding.length === 2) {
+            setTopPadding(padding[0])
+            setBottomPadding(padding[0])
+            setRightPadding(padding[1])
+            setLeftPadding(padding[1])
+          } else if (padding.length === 4) {
+            setTopPadding(padding[0])
+            setRightPadding(padding[1])
+            setBottomPadding(padding[2])
+            setLeftPadding(padding[3])
+          }
         }
       }
     }

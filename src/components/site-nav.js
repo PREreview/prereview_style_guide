@@ -10,6 +10,15 @@ const SiteNav = () => {
         <li>
           <Link to="/logo-usage/">Logo Usage</Link>
         </li>
+        <li>UI Elements</li>
+        <li>
+          <ul>
+            <li>
+              <Link to="/buttons-page/">Buttons</Link>
+            </li>
+          </ul>
+        </li>
+
         <li>
           <Link to="/typography/">Typography</Link>
         </li>

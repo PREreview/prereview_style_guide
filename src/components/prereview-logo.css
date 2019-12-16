@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: calc(var(--site-header-height) - var(--lgrd));
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -18,15 +18,21 @@
   flex: 0 0 auto;
   box-sizing: border-box;
   width: fit-content;
+  height: 20px;
 }
 @media screen and (max-width: 800px) {
   .preveview-logo__logo-text {
     display: none;
   }
 }
-.prereview-logo img {
+.prereview-logo__logo-icon img {
   margin: 0;
-  flex: 0 0 auto;
-  height: 100%;
   object-fit: contain;
+  height: 48px;
+}
+
+.preveview-logo__logo-text img {
+  margin: 0;
+  object-fit: contain;
+  height: 20px;
 }

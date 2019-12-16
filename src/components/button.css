@@ -36,7 +36,6 @@ a.button {
     }
   }
 
-  &:focus,
   &:active {
     & .button__contents {
       background-color: var(--button-background-focus-color);
@@ -48,7 +47,12 @@ a.button {
     }
   }
 
-  &:active {
+  &.button--focused,
+  &.button--focused:hover,
+  &:focus {
+    & .button__contents {
+      box-shadow: 0 0 0 2px var(--button-background-focus-color);
+    }
   }
 
   & .button__contents {
@@ -56,7 +60,7 @@ a.button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--xxsgrd) var(--xsgrd);
+    padding: 0 var(--xsgrd);
     font: var(--ui-button-font);
     letter-spacing: 0.04em;
     border-radius: 2px;
@@ -78,7 +82,7 @@ a.button {
   }
   &.button--primary.button--pill .button__contents {
     border-radius: 16px;
-    padding: var(--xxsgrd) var(--sgrd);
+    padding: 0 var(--sgrd);
   }
 
   & .button__heartbeat {
