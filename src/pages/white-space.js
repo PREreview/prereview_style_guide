@@ -41,7 +41,7 @@ const WhiteSpace = () => {
                   subtitle="24px to 32px margin"
                 />
                 <div className="white-space__card">
-                  <RevealBoxWhiteSpace unit="px">
+                  <RevealBoxWhiteSpace>
                     <div className="white-space__wrapping-grid">
                       <RevealBoxWhiteSpace>
                         <div className="white-space__example-box">
@@ -143,6 +143,49 @@ const WhiteSpace = () => {
                   </RevealBoxWhiteSpace>
                 </div>
               </ExampleRow>
+            </ExampleGroup>
+            <ExampleGroup>
+              <ExampleRow>
+                <ExampleLabel
+                  title="Text Column Gutters"
+                  subtitle="2 x line-height"
+                />
+                <div>
+                  <RevealBoxWhiteSpace>
+                    <StyleP className="white-space__two-col__block-a">
+                      Paragraphy 1
+                    </StyleP>
+                  </RevealBoxWhiteSpace>
+                  <RevealBoxWhiteSpace>
+                    <StyleP className="white-space__two-col__block-b">
+                      Paragraphy 1
+                    </StyleP>
+                  </RevealBoxWhiteSpace>
+                  <RevealBoxWhiteSpace>
+                    <div style={{ margin: "20px", padding: "10px" }}>
+                      div m:20px p:10px
+                    </div>
+                  </RevealBoxWhiteSpace>
+                </div>
+              </ExampleRow>
+            </ExampleGroup>
+            <ExampleGroup>
+              <RevealBoxWhiteSpace display="block">
+                <span>
+                  <p>span > p</p>
+                </span>
+              </RevealBoxWhiteSpace>
+              <RevealBoxWhiteSpace>
+                <span>span</span>
+              </RevealBoxWhiteSpace>
+              <div>
+                <RevealBoxWhiteSpace>
+                  <p style={{ margin: "20px" }}>p1</p>
+                </RevealBoxWhiteSpace>
+                <RevealBoxWhiteSpace>
+                  <p style={{ margin: "20px" }}>p2</p>
+                </RevealBoxWhiteSpace>
+              </div>
             </ExampleGroup>
           </div>
         </header>

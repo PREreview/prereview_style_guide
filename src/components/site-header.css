@@ -5,15 +5,26 @@
   align-items: center;
   background-color: var(--prereview-red);
   color: white;
-  padding: var(--mgrd);
+  padding: var(--sgrd) var(--mgrd);
   box-shadow: 0 2px 4px lightgrey;
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 1000;
+  overflow: hidden;
 }
 
+.site-header__logo {
+  margin-right: var(--mgrd);
+  overflow: hidden;
+  flex: 0 0 auto;
+}
 .site-header__title {
   margin: 0 !important;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: hidden;
 }
 .site-header a {
   text-decoration: none;

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `PREreview Style Guide`,
+    title: `Style Guide`,
     description: `A Style Guide for building User Interfaces within the PREreview umbrella`,
     author: `@halmos`,
   },

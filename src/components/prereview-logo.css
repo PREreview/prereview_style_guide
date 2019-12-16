@@ -1,0 +1,32 @@
+.prereview-logo {
+  display: flex;
+  align-items: center;
+  height: calc(var(--site-header-height) - var(--lgrd));
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.prereview-logo__logo-icon {
+  padding-right: 8%;
+  flex: 0 0 auto;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: fit-content;
+}
+.preveview-logo__logo-text {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  width: fit-content;
+}
+@media screen and (max-width: 800px) {
+  .preveview-logo__logo-text {
+    display: none;
+  }
+}
+.prereview-logo img {
+  margin: 0;
+  flex: 0 0 auto;
+  height: 100%;
+  object-fit: contain;
+}

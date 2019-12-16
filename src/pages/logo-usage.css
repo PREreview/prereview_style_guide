@@ -1,0 +1,34 @@
+.logo-usage {
+}
+
+.logo-usage__nav-bar-example {
+  flex: 1 1 auto;
+}
+.logo-usage__nav-bar {
+  padding: var(--sgrd);
+  height: var(--site-header-height);
+  display: flex;
+  border-top: 1px dotted var(--prereview-light-blue);
+  border-bottom: 1px dotted var(--prereview-light-blue);
+}
+
+.logo-usage__nav-bar__logo {
+  height: calc(var(--site-header-height) - var(--lgrd));
+  width: 200px;
+  min-width: 200px;
+  flex: 0 0 auto;
+  display: block;
+  margin: 0;
+  object-fit: contain;
+}
+
+.logo-usage__nav-bar__logo_v-dim {
+  margin: 0 var(--sgrd);
+}
+
+.logo-usage__nav-bar__icon-logo {
+  height: calc(var(--site-header-height) - var(--lgrd));
+  flex: 0 0 auto;
+  display: block;
+  margin: 0;
+}

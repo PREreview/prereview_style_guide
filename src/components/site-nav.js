@@ -8,6 +8,9 @@ const SiteNav = () => {
     <nav className="site-nav">
       <ul>
         <li>
+          <Link to="logo-usage/">Logo Usage</Link>
+        </li>
+        <li>
           <Link to="/typography/">Typography</Link>
         </li>
         <li>

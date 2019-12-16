@@ -35,6 +35,7 @@ const getCssWhiteSpace = el => {
   return {
     margin: margin,
     padding: padding,
+    display: style.display,
   }
 }
 
