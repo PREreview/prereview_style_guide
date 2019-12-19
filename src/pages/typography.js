@@ -50,7 +50,7 @@ const Typography = () => {
             use a relatively large line-spacing that is allows for easier
             eye-tracking accross lines of text.
           </StyleP>
-          <ExampleRow>
+          {/* <ExampleRow>
             <ExampleLabel
               title="Heading 1"
               subtitle="Open Sans 600, 24pt / 32pt"
@@ -59,7 +59,7 @@ const Typography = () => {
             <ExampleHx level={1} styleName="header-1">
               {titleGenerator.generateSentences(1)}
             </ExampleHx>
-          </ExampleRow>
+          </ExampleRow> */}
         </section>
       </article>
     </Layout>

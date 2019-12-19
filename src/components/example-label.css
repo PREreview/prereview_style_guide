@@ -1,6 +1,11 @@
 .example-label {
   grid-area: "label";
   box-sizing: border-box;
+  margin-bottom: var(--sgrd);
+}
+
+.example-row .example-label {
+  margin-bottom: 0;
 }
 
 .example-label__subtitle {

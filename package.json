@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@reach/rect": "^0.6.2",
     "classnames": "^2.2.6",
     "css-unit-converter": "^1.1.1",
     "gatsby": "^2.18.4",

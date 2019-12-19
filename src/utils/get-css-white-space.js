@@ -30,7 +30,7 @@ const getCssWhiteSpace = el => {
     rightUnit: cssUnits.parse(style.paddingRight).unit,
   }
 
-  console.log("margin", margin)
+  //console.log("margin", margin)
 
   return {
     margin: margin,

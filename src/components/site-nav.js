@@ -16,6 +16,9 @@ const SiteNav = () => {
             <li>
               <Link to="/buttons-page/">Buttons</Link>
             </li>
+            <li>
+              <Link to="/nav-bar-page/">Navigation Bar</Link>
+            </li>
           </ul>
         </li>
 

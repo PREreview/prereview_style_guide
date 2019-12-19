@@ -1,0 +1,20 @@
+.reveal-break-points {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  outline: 1px solid purple;
+  right: 0;
+}
+
+.reveal-break-points__break {
+  height: 100%;
+  outline: 1px dotted var(--prereview-light-blue);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.reveal-break-points__break:hover {
+}

@@ -5,6 +5,25 @@ import getCssWhiteSpace from "../utils/get-css-white-space"
 import { IoMdEyeOff, IoMdEye } from "react-icons/io"
 import { HDimension, VDimension } from "./dimensions"
 
+// from https://itnext.io/reusing-the-ref-from-forwardref-with-react-hooks-4ce9df693dd
+function useCombinedRefs(...refs) {
+  const targetRef = React.useRef()
+
+  React.useEffect(() => {
+    refs.forEach(ref => {
+      if (!ref) return
+
+      if (typeof ref === "function") {
+        ref(targetRef.current)
+      } else {
+        ref.current = targetRef.current
+      }
+    })
+  }, [refs])
+
+  return targetRef
+}
+
 const RevealBoxWhiteSpace = ({
   padding,
   margin,
@@ -38,10 +57,16 @@ const RevealBoxWhiteSpace = ({
   const [cssDisplay, setCssDisplay] = useState(display)
 
   const myRef = React.useRef()
+
+  const child = React.Children.only(children)
+
   const childRef = React.useRef()
 
+  const combinedRef = useCombinedRefs(child.ref ? child.ref : false, childRef)
+
+  console.log("child.ref", child, combinedRef.current)
   const clonedChild = React.cloneElement(React.Children.only(children), {
-    ref: childRef,
+    ref: combinedRef,
   })
 
   const getMyDisplayMode = (parentMode, childMode) => {
@@ -76,8 +101,6 @@ const RevealBoxWhiteSpace = ({
     //console.log("getMyDisplayMode", parentMode, childMode, result)
     return result
   }
-
-  useEffect(() => {})
 
   useEffect(() => {
     if (myRef.current) {

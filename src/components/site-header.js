@@ -8,7 +8,7 @@ import PrereviewLogo from "./prereview-logo"
 const SiteHeader = ({ siteTitle }) => (
   <header className="site-header">
     <div className="site-header__logo">
-      <PrereviewLogo />
+      <PrereviewLogo color="white" />
     </div>
 
     <StyleHx level={1} size={2} className="site-header__title">

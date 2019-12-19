@@ -144,7 +144,7 @@ const WhiteSpace = () => {
                 </div>
               </ExampleRow>
             </ExampleGroup>
-            <ExampleGroup>
+            {/* <ExampleGroup>
               <ExampleRow>
                 <ExampleLabel
                   title="Text Column Gutters"
@@ -186,7 +186,7 @@ const WhiteSpace = () => {
                   <p style={{ margin: "20px" }}>p2</p>
                 </RevealBoxWhiteSpace>
               </div>
-            </ExampleGroup>
+            </ExampleGroup> */}
           </div>
         </header>
       </article>

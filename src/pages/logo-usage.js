@@ -1,5 +1,5 @@
 import "./logo-usage.css"
-import React from "react"
+import React, { useRef } from "react"
 import { withPrefix } from "gatsby"
 import { LoremIpsum } from "lorem-ipsum"
 import resolvePath from "../utils/resolve-path"
@@ -14,7 +14,7 @@ import RevealBoxWhiteSpace from "../components/reveal-box-white-space"
 import StyleP from "../components/style-p"
 import StyleDisplayText from "../components/style-display-text"
 import { VDimension } from "../components/dimensions"
-
+import useBreakPoints from "../components/break-points"
 const Logo = () => {
   return (
     <Layout>
@@ -70,6 +70,18 @@ const Logo = () => {
                 </RevealBoxWhiteSpace>
               </div>
             </ExampleRow>
+            {/* <ExampleRow>
+              <ExampleLabel
+                title="Breakpoints"
+                subtitle="On narrow screen, the icon-only logo may be used"
+              />
+              <div className="logo-usage__nav-bar">
+                <img
+                  className="logo-usage__nav-bar__icon-logo"
+                  src={resolvePath("/images/prereview_logo_icon_colour.svg")}
+                />
+              </div>
+            </ExampleRow> */}
           </ExampleGroup>
         </section>
       </article>

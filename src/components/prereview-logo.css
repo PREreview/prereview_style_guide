@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   height: calc(var(--site-header-height) - var(--lgrd));
+  width: max-content;
   flex: 1 0 auto;
   box-sizing: border-box;
   overflow: hidden;
@@ -19,12 +20,13 @@
   box-sizing: border-box;
   width: fit-content;
   height: 20px;
-}
-@media screen and (max-width: 800px) {
-  .preveview-logo__logo-text {
-    display: none;
+  & > img {
+    width: 191px;
+    object-fit: contain;
+    object-position: left;
   }
 }
+
 .prereview-logo__logo-icon img {
   margin: 0;
   object-fit: contain;
