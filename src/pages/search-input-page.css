@@ -1,0 +1,13 @@
+.search-input-page__row {
+  display: flex;
+}
+.search-input-page__search {
+  flex: 1 1 auto;
+}
+.search-input-page__row__v-dim {
+  flex: 0 0 auto;
+  position: relative;
+  margin: var(--mgrd) var(--sgrd);
+  display: flex;
+  align-items: center;
+}

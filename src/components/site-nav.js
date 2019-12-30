@@ -19,6 +19,9 @@ const SiteNav = () => {
             <li>
               <Link to="/nav-bar-page/">Navigation Bar</Link>
             </li>
+            <li>
+              <Link to="/search-input-page/">Search Field</Link>
+            </li>
           </ul>
         </li>
 

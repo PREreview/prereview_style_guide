@@ -1,0 +1,25 @@
+.example-search-input {
+  height: var(--xxlgrd);
+  width: 100%;
+  border-radius: calc(var(--xxlgrd) / 2);
+  border: 1px solid var(--ruling-color);
+  margin: var(--mgrd) 0;
+  padding: 0 var(--mgrd);
+  display: flex;
+  align-items: center;
+  transition: border 0.3s;
+  flex: 1 1 100%;
+}
+.example-search-input:focus-within {
+  border-color: black;
+}
+.example-search-input__input {
+  height: var(--xxlgrd);
+  width: 100%;
+  outline: none;
+  border: none !important;
+  display: block;
+  background-color: transparent;
+  flex: 1 1 100%;
+  font: var(--basic-font--large);
+}
