@@ -125,7 +125,7 @@ const ButtonsPage = () => {
             <StyleP>
               Note that the PREreview brand color combination of white on
               #ff3333 red does not meet the WCAG accessability standard for
-              color contrast. In this case, a text shadow may be imployed to
+              color contrast. In this case, a text shadow may be employed to
               achieve a higher effective contrast. See{" "}
               <Link to="/colors-page/">PREreview Colors</Link> for more
               information.

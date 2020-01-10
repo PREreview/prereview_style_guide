@@ -116,7 +116,7 @@ used in illustrations that appear in PREReview website, digital, and print mater
             <StyleP>
               Note that the PREreview brand color combination of white on
               #ff3333 red does not meet the WCAG accessability standard for
-              color contrast. In this case, a text shadow may be imployed to
+              color contrast. In this case, a text shadow may be employed to
               achieve a higher effective contrast between the text and
               background.
               <blockquote>
