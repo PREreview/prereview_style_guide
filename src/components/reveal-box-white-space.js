@@ -64,7 +64,7 @@ const RevealBoxWhiteSpace = ({
 
   const combinedRef = useCombinedRefs(child.ref ? child.ref : false, childRef)
 
-  console.log("child.ref", child, combinedRef.current)
+  //console.log("child.ref", child, combinedRef.current)
   const clonedChild = React.cloneElement(React.Children.only(children), {
     ref: combinedRef,
   })

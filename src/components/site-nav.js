@@ -41,6 +41,9 @@ const SiteNav = () => {
         <li>
           <Link to="/white-space/">White Space</Link>
         </li>
+        <li>
+          <Link to="/colors-page/">PREreview Colors</Link>
+        </li>
       </ul>
     </nav>
   )

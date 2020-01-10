@@ -69,4 +69,15 @@ const getCssFontMetrics = (styleName = "none", variantName) => {
   }
 }
 
-export { getCssVariable, getCssFontMetrics }
+const getCssColors = () => {
+  const styles = window.getComputedStyle(document.body)
+  console.log("styles", styles)
+  //styles.map(style => {if(style) })
+  if (typeof window !== `undefined`) {
+    const styles = window.getComputedStyle(document.body)
+  }
+  return styles
+
+  const colors = []
+}
+export { getCssVariable, getCssFontMetrics, getCssColors }

@@ -11,6 +11,7 @@
   --xxlgrd: 56px;
   /* Pre Review Colors */
   --prereview-red: #ff3333;
+  --prerview-red-text-shadow: #8f0000;
   --prereview-black: #000000;
   --prereview-white: #ffffff;
   --prereview-grey: #4b4949;
@@ -31,7 +32,7 @@
   --ruling-color: var(--prereview-light-grey);
 
   --basic-font-color: var(--unrich-black);
-  --basic-font-color--light: var(--prereview-light-grey);
+  --basic-font-color--light: #767676;
 
   /* standard button colors */
   --button-background-color: transparent;
@@ -124,6 +125,17 @@
   --display-1-font: 300 var(--display-1-font-size) /
     var(--display-1-line-height) var(--font-family);
 
+  /* button fonts */
+  --button-font-size: var(--basic-font-size);
+  --button-font-leading: var(--basic-font-size);
+  --button-font: 500 var(--button-font-size) / var(--ui-button-font-leading)
+    var(--font-family);
+
+  --button-font-size--primary: 16px;
+  --button-font-leading--primary: 16px;
+  --button-font--primary: 500 var(--button-font-size--primary) /
+    var(--button-font-leading--primary) var(--font-family);
+
   /* Site Vars */
   --site-header-height: 80px;
   --site-left-margin-width: 200px;
@@ -142,6 +154,11 @@ img {
   margin: 0;
 }
 
+blockquote {
+  padding: var(--sgrd);
+  background: var(--prereview-light-blue);
+  margin: var(--sgrd) 0;
+}
 /* Media Queries */
 
 @custom-media --mobile only screen and (width <= 420px);

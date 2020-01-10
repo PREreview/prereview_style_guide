@@ -17,7 +17,13 @@ const RevealBreakPoints = () => {
             width: `${breakPoint.maxWidth}px`,
           }}
           className={`reveal-break-points__break reveal-break-points__break${breakPoint.name}`}
-        />
+        >
+          <div className="reveal-break-points__break__label-box">
+            <div className="reveal-break-points__break__label">
+              {breakPoint.maxWidth}px
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   )

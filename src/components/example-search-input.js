@@ -6,7 +6,7 @@ import { useBreakPoints, getBreakPointClasses } from "./break-points"
 import Rect, { useRect } from "@reach/rect"
 import RevealBreakPoints from "./reveal-break-points"
 
-const ExampleNavBar = ({ children, showBreakPoints }) => {
+const ExampleSearchInput = ({ children, size = "large" }) => {
   // const navBarRef = useRef()
 
   // const breakPoints = useBreakPoints(navBarRef, "example-search-input")
@@ -14,10 +14,10 @@ const ExampleNavBar = ({ children, showBreakPoints }) => {
 
   return (
     <RevealBoxWhiteSpace
-      className="example-search-input-container"
+      className={`example-search-input-container`}
       display="block"
     >
-      <div className={`example-search-input`}>
+      <div className={`example-search-input  example-search-input--${size}`}>
         <input
           className="example-search-input__input"
           type="text"
@@ -28,4 +28,4 @@ const ExampleNavBar = ({ children, showBreakPoints }) => {
   )
 }
 
-export default ExampleNavBar
+export default ExampleSearchInput

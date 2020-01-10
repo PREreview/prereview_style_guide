@@ -3,17 +3,42 @@
   left: 0;
   top: 0;
   bottom: 0;
-  outline: 1px solid purple;
   right: 0;
+  pointer-events: none;
 }
-
+.reveal-break-points:hover {
+}
 .reveal-break-points__break {
   height: 100%;
-  outline: 1px dotted var(--prereview-light-blue);
+  outline: 1px dotted var(--prereview-xxlight-grey);
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
+}
+.reveal-break-points__break__label-box {
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--prereview-light-gold);
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
+.reveal-break-points__break__label-box:hover {
+  opacity: 1;
+}
+
+.reveal-break-points__break__label {
+  position: absolute;
+  right: -5px;
+  line-height: 100%;
+  bottom: calc(50% - 4px);
+  text-align: center;
+  font-size: 9px;
+  transform: rotate(-90deg);
 }
 
 .reveal-break-points__break:hover {

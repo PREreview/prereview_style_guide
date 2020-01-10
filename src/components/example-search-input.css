@@ -10,6 +10,10 @@
   transition: border 0.3s;
   flex: 1 1 100%;
 }
+.example-search-input--small {
+  height: var(--xlgrd);
+  border-radius: calc(var(--xlgrd) / 2);
+}
 .example-search-input:focus-within {
   border-color: black;
 }

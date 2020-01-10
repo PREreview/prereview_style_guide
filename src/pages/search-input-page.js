@@ -14,7 +14,7 @@ import StyleP from "../components/style-p"
 import { VDimension } from "../components/dimensions"
 import ExampleSearchInput from "../components/example-search-input"
 
-const NavBarPage = () => {
+const SearchInputPage = () => {
   return (
     <Layout>
       <article className="page page--search-input">
@@ -43,10 +43,29 @@ const NavBarPage = () => {
               </div>
             </div>
           </ExampleGroup>
+          <StyleP variantName="large">
+            In situations where Search is not the primary call to action, a more
+            compact search input is recommended.
+          </StyleP>
+          <ExampleGroup>
+            <ExampleLabel
+              title="Secondary Search Input"
+              subtitle="Open Sans 500, 13pt"
+            />
+            <StyleP></StyleP>
+            <div className="search-input-page__row">
+              <div className="search-input-page__search">
+                <ExampleSearchInput size="small" />
+              </div>
+              <div className="search-input-page__row__v-dim">
+                <VDimension size={40} unit="px" />
+              </div>
+            </div>
+          </ExampleGroup>
         </section>
       </article>
     </Layout>
   )
 }
 
-export default NavBarPage
+export default SearchInputPage

@@ -46,8 +46,8 @@ const Typography = () => {
             type treatment. Open Sans is a sans-serif font with a wide range of
             weights and a large charcter set. It features simple forms that work
             well at large display sizes. However, care must be taken when
-            applied to bodies of text – in such situation it is recomended to
-            use a relatively large line-spacing that is allows for easier
+            applied to bodies of text – in such situations it is recommended to
+            use a relatively large line-spacing that allows for easier
             eye-tracking accross lines of text.
           </StyleP>
           {/* <ExampleRow>

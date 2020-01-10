@@ -7,9 +7,12 @@
 .logo-usage__nav-bar {
   padding: var(--sgrd);
   height: var(--site-header-height);
-  display: flex;
+  display: inline-flex;
   border-top: 1px dotted var(--prereview-light-blue);
   border-bottom: 1px dotted var(--prereview-light-blue);
+  &.logo-usage__nav-bar--red {
+    background-color: var(--prereview-red);
+  }
 }
 
 .logo-usage__nav-bar__logo {

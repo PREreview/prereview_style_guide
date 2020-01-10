@@ -1,20 +1,16 @@
 import "./buttons-page.css"
 import "../components/button.css"
 import React from "react"
-import { withPrefix } from "gatsby"
-import { LoremIpsum } from "lorem-ipsum"
-import resolvePath from "../utils/resolve-path"
 import Layout from "../components/layout"
 import StyleHx from "../components/style-hx"
 import ExampleRow from "../components/example-row"
 import ExampleGroup from "../components/example-group"
 import ExampleLabel from "../components/example-label"
-import ExampleHx from "../components/example-hx"
-import ExampleTextBlock from "../components/example-text-block"
 import RevealBoxWhiteSpace from "../components/reveal-box-white-space"
 import StyleP from "../components/style-p"
 import { VDimension } from "../components/dimensions"
 import Button from "../components/button"
+import { Link } from "gatsby"
 
 const ButtonsPage = () => {
   return (
@@ -124,6 +120,16 @@ const ButtonsPage = () => {
                 </div>
               </div>
             </ExampleRow>
+          </ExampleGroup>
+          <ExampleGroup>
+            <StyleP>
+              Note that the PREreview brand color combination of white on
+              #ff3333 red does not meet the WCAG accessability standard for
+              color contrast. In this case, a text shadow may be imployed to
+              achieve a higher effective contrast. See{" "}
+              <Link to="/colors-page/">PREreview Colors</Link> for more
+              information.
+            </StyleP>
           </ExampleGroup>
         </section>
       </article>

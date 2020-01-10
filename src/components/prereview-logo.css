@@ -3,9 +3,10 @@
   align-items: center;
   height: calc(var(--site-header-height) - var(--lgrd));
   width: max-content;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
 .prereview-logo__logo-icon {
   padding-right: 8%;

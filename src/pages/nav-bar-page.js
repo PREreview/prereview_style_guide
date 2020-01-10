@@ -1,6 +1,6 @@
 import "./nav-bar-page.css"
 import "../components/button.css"
-import React from "react"
+import React, { useState } from "react"
 import { withPrefix } from "gatsby"
 import { LoremIpsum } from "lorem-ipsum"
 import resolvePath from "../utils/resolve-path"
@@ -18,6 +18,7 @@ import Button from "../components/button"
 import ExampleNavBar from "../components/example-nav-bar"
 
 const NavBarPage = () => {
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false)
   return (
     <Layout>
       <article className="page page--headers">
@@ -28,9 +29,9 @@ const NavBarPage = () => {
         <section>
           <StyleP variantName="large">
             The Header should use an adaptive layout to allow for functional
-            navitagation for both mobile and desktop users. On narrow screens,
-            the logo may be reduced to only the icon variant to allow more space
-            for navigation controls.
+            navigation for both mobile and desktop users. On narrow screens, the
+            logo may be reduced to only the icon variant to allow more space for
+            navigation controls.
           </StyleP>
 
           <ExampleGroup>
@@ -40,7 +41,7 @@ const NavBarPage = () => {
             />
             <StyleP></StyleP>
             <div className="nav-bar-page__nav-bar-row">
-              <ExampleNavBar>
+              <ExampleNavBar showBreakPoints={true}>
                 <RevealBoxWhiteSpace>
                   <a className="nav-bar-page__nav-bar__item">Lorem</a>
                 </RevealBoxWhiteSpace>
@@ -53,6 +54,48 @@ const NavBarPage = () => {
               </ExampleNavBar>
               <div className="nav-bar-page__nav-bar__v-dim">
                 <VDimension size={80} unit="px" />
+              </div>
+            </div>
+          </ExampleGroup>
+          <ExampleGroup>
+            <ExampleLabel
+              title="Navigation Bar with Menu button for mobile"
+              subtitle="Where the space available for mobile devices is insufficient, a menu toggle may be employed to reveal a side-drawer for navigation."
+            />
+            <StyleP></StyleP>
+
+            <div className="nav-bar-page__mobile-frame">
+              <ExampleNavBar
+                showBreakPoints={true}
+                mobileMenu={true}
+                adaptiveLogo={false}
+                onMobileMenuClick={() => setDrawerIsOpen(!drawerIsOpen)}
+                className="nav-bar-page__mobile-nav-bar"
+              ></ExampleNavBar>
+              <div
+                className={`nav-bar-page__mobile-frame__drawer nav-bar-page__mobile-frame__drawer--${
+                  drawerIsOpen ? "open" : "closed"
+                }`}
+              >
+                <RevealBoxWhiteSpace display="block">
+                  <div className="nav-bar-page__mobile-frame__drawer-contents">
+                    <RevealBoxWhiteSpace>
+                      <a className="nav-bar-page__mobile-frame__drawer-item">
+                        Lorem
+                      </a>
+                    </RevealBoxWhiteSpace>
+                    <RevealBoxWhiteSpace>
+                      <a className="nav-bar-page__mobile-frame__drawer-item">
+                        Ipsum
+                      </a>
+                    </RevealBoxWhiteSpace>
+                    <RevealBoxWhiteSpace>
+                      <a className="nav-bar-page__mobile-frame__drawer-item">
+                        Dolor
+                      </a>
+                    </RevealBoxWhiteSpace>
+                  </div>
+                </RevealBoxWhiteSpace>
               </div>
             </div>
           </ExampleGroup>
